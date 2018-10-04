@@ -29,3 +29,7 @@ export MAX_THREADS=50
 ```bash
 python run_script.py apt2b-catalog.csv
 ```
+
+## TODO:
+
+* Unittests
