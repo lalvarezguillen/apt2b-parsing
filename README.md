@@ -30,6 +30,27 @@ export MAX_THREADS=50
 python run_script.py apt2b-catalog.csv
 ```
 
-## TODO:
+## Setting up for development:
 
-* Unittests
+* Install dependencies:
+```bash
+pip install -r requirements.txt -r requirements.dev.txt
+```
+
+* Run the tests to make sure everything is working
+```bash
+export DB_USER=dummy-user
+export DB_PASS=dummy-pass
+export DB_HOST=dummy-host
+export DB_NAME=dummy-db
+export IMAGES_FOLDER=some-folder
+export MAX_THREADS=50
+
+pytest tests
+```
+
+* Break things up.
+
+
+## TODO
+* Extend unittests

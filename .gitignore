@@ -4,6 +4,6 @@
 .vscode
 .autoenv
 *.csv
-*.txt
 images
 *.sh
+.coverage

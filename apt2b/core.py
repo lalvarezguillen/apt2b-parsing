@@ -65,7 +65,7 @@ def is_sleeper(row: list) -> int:
     """
     Whether the product is in stock.
     """
-    if "sleeper" in row[NAME_COL_IDX]:
+    if "sleeper" in row[NAME_COL_IDX].lower():
         return 1
     return 0
 
@@ -130,7 +130,7 @@ def get_image_info(row: tuple) -> Tuple[str, str]:
     """
     img_url = row[IMAGEURL_COL_IDX]
     final_path = img_url.split("/")[-1]
-    filename, _ = final_path.split("?")
+    filename = final_path.split("?")[0]
     return f"12+{filename}", img_url
 
 

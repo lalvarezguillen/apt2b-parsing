@@ -1,0 +1,4 @@
+mysql-connector>=2.1.0,<3.0.0
+requests>=2.19.0,<3.0.0
+retry>=0.9,<1.0.0
+click>=7.0.0,<8.0.0
