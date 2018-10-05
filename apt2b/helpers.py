@@ -24,11 +24,11 @@ def try_float_cast(val: str) -> Optional[float]:
     """
     try:
         return float(val)
-    except ValueError:
+    except (TypeError, ValueError):
         return None
 
 
-def read_batch(rows: Iterable, batch_size: int = 1) -> Iterable:
+def read_batch(rows: Iterable, batch_size: int = 500) -> Iterable:
     """
     Reads batches of elements from an iterable.
 
